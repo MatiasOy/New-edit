@@ -1,0 +1,24 @@
+Functions
+
+function storenation(nation) {
+	sessionStorage.getItem('nation' , nation);
+}
+
+function getnation() {
+	return sessionStorage.getItem('nation');
+}
+
+const myNation = 'Argentina';
+
+storenation(myNation);
+
+-----------------------------------------------------
+
+
+person = {
+  firstName: "Matias",
+  lastName : "Oyarzun",
+};
+person.name = function() {
+  return this.firstName + " " + this.lastName;
+};
